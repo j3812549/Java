@@ -1,0 +1,16 @@
+package com.tiancai.maven.hello;
+
+import java.io.IOException;
+import java.rmi.ServerException;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HelloServlet extends HttpServlet {
+  @Override
+  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServerException, IOException {
+    req.getRequestDispatcher("/index.jsp").forward(req, resp);
+  }
+  
+}
