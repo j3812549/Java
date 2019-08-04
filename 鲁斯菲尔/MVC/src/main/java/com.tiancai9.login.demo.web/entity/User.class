@@ -1,0 +1,86 @@
+package com.tiancai9.login.demo.entity;
+
+import java.io.serializable;
+
+/**
+ * 用户表
+ * <p>Title: User</p>
+ * <p>Description:</p>
+ * 
+ * @author tiancai9
+ * @version 1.0.0
+ * @date 2019/8/4
+ */
+
+ public class User implements Serializable {
+   private String username;
+   private String loginId;
+   private String loginPwd;
+   private Int age;
+ }
+
+  public String getUsername() {
+    return this.username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public String getLoginId() {
+    return this.loginId;
+  }
+
+  public void setLoginId(String loginId) {
+    this.loginId = loginId;
+  }
+
+  public String getLoginPwd() {
+    return this.loginPwd;
+  }
+
+  public void setLoginPwd(String loginPwd) {
+    this.loginPwd = loginPwd;
+  }
+
+  public String getUsername() {
+    return this.username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public String getLoginId() {
+    return this.loginId;
+  }
+
+  public void setLoginId(String loginId) {
+    this.loginId = loginId;
+  }
+
+  public String getLoginPwd() {
+    return this.loginPwd;
+  }
+
+  public void setLoginPwd(String loginPwd) {
+    this.loginPwd = loginPwd;
+  }
+
+  public Int getAge() {
+    return this.age;
+  }
+
+  public void setAge(Int age) {
+    this.age = age;
+  }
+
+  @Override
+  public String toString() {
+    return "{" +
+      " username='" + getUsername() + "'" +
+      ", loginId='" + getLoginId() + "'" +
+      ", loginPwd='" + getLoginPwd() + "'" +
+      ", age='" + getAge() + "'" +
+      "}";
+  }

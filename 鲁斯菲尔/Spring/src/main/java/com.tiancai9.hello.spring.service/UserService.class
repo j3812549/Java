@@ -1,0 +1,5 @@
+package com.tiancai9.hello.spring.service;
+
+public interface UserService {
+  public void sayHi();
+}

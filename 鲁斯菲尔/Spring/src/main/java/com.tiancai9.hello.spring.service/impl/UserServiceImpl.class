@@ -1,0 +1,9 @@
+package com.tiancai9.hello.spring.service.impl;
+
+import com.tiancai9.hello.spring.service.UserService;
+
+public class UserService implements UserService {
+  public void sayHi() {
+    System.out.println("hello spring");
+  }
+}

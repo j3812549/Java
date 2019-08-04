@@ -1,0 +1,16 @@
+package com.tiancai9.login.demo.dao;
+
+import com.tiancai9.login.demo.entity.User;
+/**
+ * 用户数据访问
+ * <p>Title: UserDao</p>
+ * <p>Description:</p>
+ * 
+ * @author tiancai9
+ * @version 1.0.0
+ * @date 2019/8/4
+ */
+
+public interface UserDao {
+  public User login(String loginId, String loginPwd);
+}

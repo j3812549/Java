@@ -1,0 +1,24 @@
+package com.tiancai9.login.demo.dao.impl;
+
+import com.tiancai9.login.demo.dao.UserDao;
+
+public class UserDaoImpl implements UserDao {
+
+  /**
+   * 用户登录
+   * @param loginId 登录 Id
+   * @param loginPwd 登录密码
+   * @return String: 登录结果
+   */
+  public String login(String loginId, String loginPwd) {
+    // 直接根据 LoginId 查询出这个用户信息
+    if ("admin".equals(loginId)) {
+        // 再根据传入的密码匹配
+        if ("admin".equals(loginPwd)) {
+          return "成功"
+        }
+
+    }
+  }
+  
+}
