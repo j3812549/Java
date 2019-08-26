@@ -1,4 +1,4 @@
-package com.example.demo.core;
+package com.example.demo.core.response;
 
 import org.springframework.http.HttpStatus;
 
