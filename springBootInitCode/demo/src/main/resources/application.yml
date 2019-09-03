@@ -5,3 +5,12 @@ spring:
     password: a13979561749a.
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/hyx?useSSL=false&testOnBorrow=true&testWhileIdle=true
+mybatis:
+  type-aliases-package: com.example.demo.model
+  mapper-locations:
+  - classpath:mapper/**/*.xml
+mapper:
+  mappers:
+  - com.example.demo.core.mapper.MyMapper
+  not-empty: false
+  identity: MYSQL
